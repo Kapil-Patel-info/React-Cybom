@@ -1,4 +1,4 @@
-##-----Tuesday-------------------25-04-25-------------------------
+##-----Tuesday-------------------25-04-25------------------------->
 
 -To install react - npm install -g create react app
 -React 
@@ -12,6 +12,10 @@ framework has predefined rules and things
 Library we can use things what we need 
 
 
-----Thursdau-------------------27-04-25-------------------------
+#------------Thursdau-------------------27-04-25------------------------->
 
 -bable is complier which converts jsx code to machine code
+-react Fragment -so the extra node will not create <> </>
+
+#-------------Friday-------------------28-04-25------------------------->
+
