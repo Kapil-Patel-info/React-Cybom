@@ -1,19 +1,22 @@
-import Cybrom from "./Cybrom";
-import Data from "./Data";
-import Footer from "./Footer";
-import Header from "./Header";
+
+import College from "./College";
+
+const obj = {
+  name : "LNCT",
+  fees : 5600,
+  seats : 46,
+  city : "Bhopal"
+
+}
+
 
 
 const App = () => {
   return (
     <>
-      <h1>This is app.jsx file </h1>
-      <Cybrom />
-     
-      <Header/>
-      < Data/>
-      < Footer/>
 
+    
+<College name= {obj.name} seats = {obj.seats}  fees= {obj.fees} city = {obj.city}/>
 
     </>
   );
