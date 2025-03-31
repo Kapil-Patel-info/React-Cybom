@@ -19,3 +19,11 @@ Library we can use things what we need
 
 #-------------Friday-------------------28-04-25------------------------->
 
+
+#-------------saturday-------------------29-04-25------------------------->
+
+-two types functional and class 
+class component has state management
+functional component has hooks to manage states
+
+-props
