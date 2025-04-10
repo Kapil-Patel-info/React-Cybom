@@ -1,19 +1,23 @@
-import "./style.css";
-
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "./Layout";
+import Example from "./pages/Example";
+import Form from "./pages/Form";
+import Show from "./pages/Show";
 
 const App = () => {
   return (
-    <>
-      <h1 style={{ textAlign: "center" }}>Welcome</h1>
-      
-      <h1>application form</h1>
-
-name : <input type="text" />
+    <BrowserRouter>
+      <Routes>
 
 
+        <Route path="/"  element={<Layout />}>
+          <Route path="Form" element={<Form />} />
+          <Route path="Show" element={<Show />} />
+          <Route path="Example" element={<Example />} />
 
-    </>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
 
