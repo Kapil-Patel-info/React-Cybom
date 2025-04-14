@@ -11,6 +11,9 @@ const App = () => {
 
 
         <Route path="/"  element={<Layout />}>
+        
+        <Route index element={<Example />} />
+
           <Route path="Form" element={<Form />} />
           <Route path="Show" element={<Show />} />
           <Route path="Example" element={<Example />} />
