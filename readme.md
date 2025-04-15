@@ -38,7 +38,7 @@ react-router | react-router-dom
         <Link to="/about">About</Link> | 
         <Link to="/contact">Contact</Link>
 
-<Outlit> //to display content
+<Outlet> //to display content
 
 
 -app.jsx import { BrowserRouter, Routes, Route } from "react-router-dom";

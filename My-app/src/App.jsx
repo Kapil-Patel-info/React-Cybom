@@ -1,26 +1,32 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
-import Example from "./pages/Example";
-import Form from "./pages/Form";
-import Show from "./pages/Show";
+import Home from "./Pages/Home";
+import Contact from "./Pages/Contact";
+import Insert from "./Pages/Insert";
+import Search from "./Pages/Search";
+import Display from "./Pages/Display";
+import Edit from "./Pages/Edit";
+import Update from "./Pages/Update";
 
 const App = () => {
   return (
+    
     <BrowserRouter>
-      <Routes>
-
-
-        <Route path="/"  element={<Layout />}>
-        
-        <Route index element={<Example />} />
-
-          <Route path="Form" element={<Form />} />
-          <Route path="Show" element={<Show />} />
-          <Route path="Example" element={<Example />} />
-
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="Home" element={<Home />} />
+        <Route path="Contact" element={<Contact />} />
+        <Route path="Insert" element={<Insert />} />
+        <Route path="Search" element={<Search />} />
+        <Route path="Display" element={<Display />} />
+        <Route path="/Edit/:id" element={<Edit />} />
+        <Route path="Update" element={<Update />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
+  
+    
   );
 };
 

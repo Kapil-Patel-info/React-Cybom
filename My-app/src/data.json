@@ -1,0 +1,35 @@
+{
+    "Employee": [
+      {
+        "name": "Kapil Patel",
+        "age": 22,
+        "city": "Bhopal",
+        "language": "React"
+      },
+      {
+        "name": "Anjali Sharma",
+        "age": 28,
+        "city": "Mumbai",
+        "language": "Angular"
+      },
+      {
+        "name": "Rohit Verma",
+        "age": 25,
+        "city": "Delhi",
+        "language": "Vue"
+      },
+      {
+        "name": "Sneha Rao",
+        "age": 30,
+        "city": "Hyderabad",
+        "language": "JavaScript"
+      },
+      {
+        "name": "Aman Khan",
+        "age": 27,
+        "city": "Pune",
+        "language": "React"
+      }
+    ]
+  }
+  

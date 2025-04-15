@@ -1,0 +1,39 @@
+{
+  "Employee": [
+    {
+      "name": "Kapil Patel",
+      "age": "23",
+      "city": "Bhopal",
+      "language": "React",
+      "id": "fe56"
+    },
+    {
+      "name": "Anjali Sharma",
+      "age": 28,
+      "city": "Mumbai",
+      "language": "Angular",
+      "id": "bfc1"
+    },
+    {
+      "name": "Rohit Verma",
+      "age": 25,
+      "city": "Delhi",
+      "language": "Vue",
+      "id": "14df"
+    },
+    {
+      "name": "Sneha Rao",
+      "age": 30,
+      "city": "Hyderabad",
+      "language": "JavaScript",
+      "id": "14e5"
+    },
+    {
+      "name": "Aman Khan",
+      "age": 27,
+      "city": "Pune",
+      "language": "React",
+      "id": "5746"
+    }
+  ]
+}
