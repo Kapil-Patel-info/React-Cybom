@@ -5,6 +5,7 @@ const App = () => {
     <>
     
       <h1>From App.jsx</h1>
+      <h1>welcome to react </h1>
       
     </>
   );
