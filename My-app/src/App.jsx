@@ -1,27 +1,24 @@
-import { useState } from "react";
-import Comp1 from "./Comp1";
-import Comp2 from "./Comp2";
-import { counterContext } from "./Context";
+import { useEffect, useRef, useState } from "react";
 
 const App = () => {
-  let [counter, setCounter] = useState(0);
+  const [name, setName] = useState("");
+  const conRef = useRef(0);
 
-  const incCount = () => {
-    setCounter(counter + 1);
-  };
-  // uploading 
+  useEffect(() => {
+    // Increment the ref value whenever the name changes
+    conRef.current += 1;
+    console.log("Current count:", conRef.current); // Log the current count
+  }, [name]); // Dependency array to run effect when 'name' changes
 
   return (
     <>
-      <counterContext.Provider value={{counter}}>
-        <Comp1 />
-        <Comp2 />
-        <h1>From App.jsx</h1>
-
-        <button onClick={incCount}>increase count</button>
-
-      </counterContext.Provider>
-      
+      <input
+        type="text"
+        onChange={(e) => {
+          setName(e.target.value);
+        }}
+      />
+      <p>Input changes count: {conRef.current}</p> {/* Display the count */}
     </>
   );
 };
