@@ -1,24 +1,35 @@
-import { useEffect, useRef, useState } from "react";
+import { useState, useMemo } from "react";
 
 const App = () => {
-  const [name, setName] = useState("");
-  const conRef = useRef(0);
+  const [add, setAdd] = useState(0);
+  const [sub, setSub] = useState(100);
 
-  useEffect(() => {
-    // Increment the ref value whenever the name changes
-    conRef.current += 1;
-    console.log("Current count:", conRef.current); // Log the current count
-  }, [name]); // Dependency array to run effect when 'name' changes
+  const myMulti = useMemo(() => {
+    console.log("*******"); 
+    return add * 2;
+  }, [add]);
+
+
+  // without memo  | it renders even when we subtract
+  // const myMulti = (() => {              
+    // console.log("Recalculating...");   
+  //   return add * 2;
+  // })();
+  
 
   return (
     <>
-      <input
-        type="text"
-        onChange={(e) => {
-          setName(e.target.value);
-        }}
-      />
-      <p>Input changes count: {conRef.current}</p> {/* Display the count */}
+
+
+      <h1>Addition: {add}</h1>
+      <button onClick={() => setAdd(add + 1)}>Addition</button>
+
+      <h1>Subtraction: {sub}</h1>
+      <button onClick={() => setSub(sub - 1)}>Subtraction</button>
+
+      <hr />
+
+      <h2>Multiplication (memoized): {myMulti}</h2>
     </>
   );
 };
