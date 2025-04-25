@@ -1,37 +1,28 @@
-import { useState, useMemo } from "react";
-
-const App = () => {
-  const [add, setAdd] = useState(0);
-  const [sub, setSub] = useState(100);
-
-  const myMulti = useMemo(() => {
-    console.log("*******"); 
-    return add * 2;
-  }, [add]);
+import { useReducer } from "react";
 
 
-  // without memo  | it renders even when we subtract
-  // const myMulti = (() => {              
-    // console.log("Recalculating...");   
-  //   return add * 2;
-  // })();
+const App=()=>{
+  cosnt [count , dispatch] = useReducer(reducer,0);
+
+  const dispatch=(state,action)=>{
+    if(action.type === Increment){
+      return count + 1;
+    }
+    else if(action.type === Decrement){
+      return count -1;
+    }
+  }
+
+  return(<>
+
+<h1>{count}</h1>
+
+<button onClick={()=>{dispatch({type:Increment})}}>Increment</button>
+<button onClick={()=>{dispatch({type:Decrement})}}>Decrement</button>
+
   
+  </>);
+}
 
-  return (
-    <>
-
-
-      <h1>Addition: {add}</h1>
-      <button onClick={() => setAdd(add + 1)}>Addition</button>
-
-      <h1>Subtraction: {sub}</h1>
-      <button onClick={() => setSub(sub - 1)}>Subtraction</button>
-
-      <hr />
-
-      <h2>Multiplication (memoized): {myMulti}</h2>
-    </>
-  );
-};
 
 export default App;
