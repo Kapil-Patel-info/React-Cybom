@@ -1,28 +1,17 @@
-import { useReducer } from "react";
 
+import { useState } from "react";
+import context from "./useContext";
+import Cybrom from "./Cybrom";
 
-const App=()=>{
-  cosnt [count , dispatch] = useReducer(reducer,0);
+const App = () => {
+  const [name, setName] = useState("kapil");
 
-  const dispatch=(state,action)=>{
-    if(action.type === Increment){
-      return count + 1;
-    }
-    else if(action.type === Decrement){
-      return count -1;
-    }
-  }
-
-  return(<>
-
-<h1>{count}</h1>
-
-<button onClick={()=>{dispatch({type:Increment})}}>Increment</button>
-<button onClick={()=>{dispatch({type:Decrement})}}>Decrement</button>
-
-  
-  </>);
+  return (
+    <context.Provider value={{ name, setName }}>
+      <h1>  This is App.jsx </h1>
+      <Cybrom />
+    </context.Provider>
+  );
 }
 
-
-export default App;
+  export default App;
