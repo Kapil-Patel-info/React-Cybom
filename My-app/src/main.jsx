@@ -1,18 +1,14 @@
-
-import React, { useContext } from "react";
+import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
-import store from "./store.jsx";
 import { Provider } from "react-redux";
+import store from "./store.jsx";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 createRoot(document.getElementById("root")).render(
-<Provider store={store}>
+  <Provider store={store}>
     <App />
-</Provider>
-
+  </Provider>
 );

@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import myReducer from "./counterSlice"; // corrected 'form' to 'from'
+import colorReducer from "./colorSlice";
 
 const store = configureStore({
   reducer: {
-    mycounter: myReducer // added colon :
-  }
+    mycolor: colorReducer,
+  },
 });
 
 export default store;
