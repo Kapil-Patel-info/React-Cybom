@@ -1,0 +1,85 @@
+{
+  "Student": [
+    {
+      "name": "kapilpatel",
+      "subject": "IT",
+      "Phone": "OnePlus 10R 5G",
+      "Laptop": "Apple MacBook M3 (512GB)",
+      "Car": "Hyundai Creta S Optional Diesel",
+      "Farm": "125 Acres",
+      "id": "ca9f"
+    },
+    {
+      "name": "aishasingh",
+      "subject": "Mechanical",
+      "Phone": "Samsung Galaxy S23",
+      "Laptop": "Dell XPS 15",
+      "Car": "Honda City ZX Petrol",
+      "Farm": "50 Acres",
+      "id": "ee74"
+    },
+    {
+      "name": "rohitsharma",
+      "subject": "Civil",
+      "Phone": "iPhone 14 Pro",
+      "Laptop": "HP Envy 13",
+      "Car": "Maruti Suzuki Swift",
+      "Farm": "75 Acres",
+      "id": "04ca"
+    },
+    {
+      "name": "neelgupta",
+      "subject": "Electrical",
+      "Phone": "Google Pixel 7",
+      "Laptop": "Lenovo ThinkPad X1",
+      "Car": "Tata Nexon EV",
+      "Farm": "60 Acres",
+      "id": "1da2"
+    },
+    {
+      "name": "priyamishra",
+      "subject": "Computer Science",
+      "Phone": "OnePlus Nord 3",
+      "Laptop": "Asus ROG Zephyrus",
+      "Car": "Mahindra Thar",
+      "Farm": "90 Acres",
+      "id": "9968"
+    },
+    {
+      "name": "anjalikumar",
+      "subject": "Biotechnology",
+      "Phone": "Samsung Galaxy A54",
+      "Laptop": "Microsoft Surface Laptop 5",
+      "Car": "Toyota glanza",
+      "Farm": "60 Acres",
+      "id": "a943"
+    },
+    {
+      "name": "vijaypatel",
+      "subject": "Chemical",
+      "Phone": "iPhone SE (2022)",
+      "Laptop": "Acer Swift 3",
+      "Car": "Ford EcoSport",
+      "Farm": "89 Acres",
+      "id": "75b4"
+    },
+    {
+      "name": "tanvijain",
+      "subject": "Information Technology",
+      "Phone": "Samsung Galaxy Z Fold4",
+      "Laptop": "Razer Blade 15",
+      "Car": "Volkswagen Polo",
+      "Farm": "80 Acres",
+      "id": "53bf"
+    },
+    {
+      "name": "sumanthreddy",
+      "subject": "Electronics",
+      "Phone": "Google Pixel 6a",
+      "Laptop": "MacBook Pro M2",
+      "Car": "Kia Seltos",
+      "Farm": "95 Acres",
+      "id": "3bc8"
+    }
+  ]
+}
